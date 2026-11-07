@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code or the reported measurements, please cite it."
+title: "LLM-directed weight-space programming on a network encoder"
+abstract: >-
+  Closed-form, gradient-free weight-space interventions on snlucsb/netFound-small.
+  A rank-1 edit of one tensor produces a linear, monotone increase in between-class
+  representation distance (2x at the strongest edit) with zero change in downstream
+  nearest-centroid decisions, because the edit scales the class means and their
+  ambiguous members together.
+authors:
+  - family-names: "Rauf"
+    given-names: "Abdul"
+    email: "arauf.bscsses21@iba-suk.edu.pk"
+version: "1.0.0"
+date-released: "2026-11-07"
+license: MIT
+repository-code: "https://github.com/raufnarejo505/llm-directed-weight-space-programming"
+keywords:
+  - weight-space programming
+  - model editing
+  - representation geometry
+  - network traffic
+  - netFound
