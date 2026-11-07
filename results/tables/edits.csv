@@ -1,0 +1,7 @@
+patch,tensor,shape,operation,values_changed,pct_of_model,weight_rel_l2,checkpoint_sha256
+p1a-k1-rank1-wow,base_transformer.encoder.layer.3.burst_encoder.mlp.Wo.weight,512x768,rank1,393149,0.73646,0.000373,e52c138d507e6143405eda836038fcdf93a39598dad11905cf7c3e802862aa74
+p1a-k2-rank1-wow,base_transformer.encoder.layer.3.burst_encoder.mlp.Wo.weight,512x768,rank1,393186,0.73653,0.000746,aaa12b7cc906244848e7bc8b166b5cac9c7072a36edea1dd78f3c896ae779b3c
+p1a-k5-rank1-wow,base_transformer.encoder.layer.3.burst_encoder.mlp.Wo.weight,512x768,rank1,393205,0.73657,0.001866,78b3ab5fc4c491a669aadb0177716ab3d834d19df22a2301207037fd765a204d
+p1a-k10-rank1-wow,base_transformer.encoder.layer.3.burst_encoder.mlp.Wo.weight,512x768,rank1,393212,0.73658,0.003732,7cb65c69a3682050d1af1d32f33ad3584dec58030dcd6ca9e8077d8ea1adc789
+p2-single-unit,base_transformer.encoder.layer.3.burst_encoder.mlp.Wo.weight,512x1,add,512,0.00096,0.001920,42c2b699daba8435750536c2d24df716f72fb7707b0891d45edf84161877aeaa
+p3-control-pooling,attentivePooling.lin_proj.weight,512x512,scale,262144,0.49106,0.002053,bb3666f104f9c615f1173010061ca283652250e7c8b339d1eed37d4eca86bdc2

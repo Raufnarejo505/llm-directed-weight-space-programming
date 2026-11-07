@@ -1,0 +1,95 @@
+{
+  "patch_id": "p1a-k1-rank1-wow",
+  "patch_sha256": "c6b95b6336fc933361275832c7e413c048cdaab27af80f14a44d06f4fae8e073",
+  "checkpoint_sha256": "e52c138d507e6143405eda836038fcdf93a39598dad11905cf7c3e802862aa74",
+  "base_sha256": "9e0080bbf00f6cd54e1394eb7ad484dd3f5b0758404c80d9ac91a77243e06a70",
+  "tensors": [
+    {
+      "op": 0,
+      "kind": "rank1",
+      "tensor": "base_transformer.encoder.layer.3.burst_encoder.mlp.Wo.weight",
+      "slice": "None",
+      "n": 393216,
+      "target": "(512, 768)"
+    }
+  ],
+  "n_params_changed": 393149,
+  "frac_params_changed": 0.00736461709747554,
+  "global_rel_l2": 0.0003731635666798319,
+  "per_tensor": {
+    "base_transformer.encoder.layer.3.burst_encoder.mlp.Wo.weight": {
+      "n_changed": 393149,
+      "frac_changed_of_tensor": 0.9998296101888021,
+      "delta_l2": 0.10980387491966301,
+      "base_l2": 21.231000159687387,
+      "rel_l2": 0.0051718653899383606,
+      "delta_max_abs": 0.010457582771778107,
+      "finite_after": true
+    }
+  },
+  "metrics": {
+    "n": 2382,
+    "tp": 2001,
+    "fp": 14,
+    "tn": 367,
+    "fn": 0,
+    "precision": 0.9930521091811414,
+    "recall": 1.0,
+    "f1_pos": 0.9965139442231075,
+    "f1_neg": 0.9812834224598931,
+    "macro_f1": 0.9888986833415003,
+    "fpr": 0.03674540682414698,
+    "fnr": 0.0,
+    "acc": 0.9941225860621327
+  },
+  "auc": 1.0,
+  "geometry": {
+    "between_support": 19.018964767456055,
+    "between_test": 18.505308151245117,
+    "within_scan": 3.686079740524292,
+    "within_benign": 5.332339286804199,
+    "within_pooled": 4.583722620485403,
+    "separation_ratio_support": 4.14923989563702,
+    "separation_ratio_test": 4.0371788791358885
+  },
+  "bootstrap": {
+    "macro_f1": {
+      "mean": 0.9889446064531846,
+      "lo": 0.9824015367255924,
+      "hi": 0.994491202740853
+    },
+    "precision": {
+      "mean": 0.9930909338527788,
+      "lo": 0.9891250617894216,
+      "hi": 0.9965139442231076
+    },
+    "recall": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+    },
+    "fpr": {
+      "mean": 0.03655643044619423,
+      "lo": 0.01837270341207349,
+      "hi": 0.05774278215223097
+    },
+    "auc": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0
+    }
+  },
+  "per_capture_accuracy": {
+    "ctu-idseval-6-benign-user-traffic-1": 0.963254593175853,
+    "ctu-idseval-6-malicious-portscan-1": 1.0,
+    "ctu-idseval-6-malicious-portscan-2": 1.0,
+    "ctu-idseval-6-malicious-portscan-3": 1.0
+  },
+  "drift": {
+    "mean_rel_test": 0.05960087850689888,
+    "mean_rel_support": 0.05955910310149193,
+    "cosine_test": 0.9992378354072571,
+    "centroid_shift": 1.5955003499984741
+  },
+  "elapsed_s": 671.9
+}
