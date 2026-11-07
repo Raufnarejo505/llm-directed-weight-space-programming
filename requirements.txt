@@ -1,0 +1,16 @@
+# Runtime (the study ran on CPU-only PyTorch)
+torch>=2.2
+transformers==4.57.3
+datasets>=2.19
+numpy>=1.24
+safetensors>=0.4
+scapy>=2.5
+pandas>=2.0
+psutil
+tensorboard
+
+# Analysis
+matplotlib>=3.7
+
+# Development
+pytest>=7.4

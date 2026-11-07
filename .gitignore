@@ -1,0 +1,25 @@
+# model weights (213 MB each) - fetched, never committed
+checkpoints/
+*.safetensors
+
+# embedding caches (large, regenerable)
+*.npz
+data/*.jsonl
+
+# datasets
+data/ctu/
+*.pcap
+*.pcapng
+
+# vendored upstream code
+vendor/netFound/
+
+# local environment
+.py312/
+__pycache__/
+*.pyc
+tools/PortableGit.7z.exe
+
+# OS
+Thumbs.db
+.DS_Store
