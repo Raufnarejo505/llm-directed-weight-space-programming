@@ -1,0 +1,42 @@
+{
+  "patch_id": "p2-single-unit",
+  "applied_at": "2026-11-07T08:30:41.504767+00:00",
+  "patch_file": "D:\\wsp-netfound\\patches\\p2-single-unit.json",
+  "base_checkpoint": "D:\\wsp-netfound\\checkpoints\\original",
+  "base_sha256": "9e0080bbf00f6cd54e1394eb7ad484dd3f5b0758404c80d9ac91a77243e06a70",
+  "patched_sha256": "42c2b699daba8435750536c2d24df716f72fb7707b0891d45edf84161877aeaa",
+  "tensors": {
+    "base_transformer.encoder.layer.3.burst_encoder.mlp.Wo.weight": {
+      "n_changed": 512,
+      "frac_changed_of_tensor": 0.0013020833333333333,
+      "delta_l2": 0.5650265280724925,
+      "base_l2": 21.231000159687387,
+      "rel_l2": 0.026613278876298222,
+      "delta_max_abs": 0.13963095843791962,
+      "finite_after": true
+    }
+  },
+  "summary": {
+    "patch_id": "p2-single-unit",
+    "errors": [],
+    "warnings": [],
+    "ops": [
+      {
+        "op": 0,
+        "kind": "add",
+        "tensor": "base_transformer.encoder.layer.3.burst_encoder.mlp.Wo.weight",
+        "slice": "[None, [656, 657]]",
+        "n": 512,
+        "target": "(512, 1)"
+      }
+    ],
+    "n_tensors_touched": 1,
+    "n_params_touched": 512,
+    "frac_params_touched": 9.590979384171081e-06,
+    "total_params": 53383495,
+    "n_params_changed": 512,
+    "frac_params_changed": 9.590979384171081e-06,
+    "global_rel_l2": 0.0019202174298358593,
+    "all_finite": true
+  }
+}

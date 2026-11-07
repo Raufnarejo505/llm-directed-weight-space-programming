@@ -1,0 +1,15 @@
+{
+ "patch_id": "p3-control-pooling",
+ "created": "2026-11-06",
+ "target_capability": "flow-level port-scan vs benign separability (fixed nearest-centroid readout)",
+ "hypothesis": "Negative control: scale the attentive-pooling projection, which is NOT on the masked-mean embedding path.",
+ "notes": "Expected effect on the readout: exactly zero. If this patch changes the metric, the harness is leaking.",
+ "base_checkpoint": "D:\\wsp-netfound\\checkpoints\\original",
+ "operations": [
+  {
+   "op": "scale",
+   "tensor": "attentivePooling.lin_proj.weight",
+   "factor": 1.05
+  }
+ ]
+}
