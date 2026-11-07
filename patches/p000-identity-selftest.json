@@ -1,0 +1,22 @@
+{
+  "patch_id": "p000-identity-selftest",
+  "created": "2026-11-06",
+  "target_capability": "NONE (plumbing self-test; zero net change)",
+  "hypothesis": "Verify that the patch engine validates, materialises, audits and can be reverted without altering any weight value.",
+  "base_checkpoint": "D:\\wsp-netfound\\checkpoints\\original",
+  "operations": [
+    {
+      "op": "scale",
+      "tensor": "dirPred.weight",
+      "factor": 1.0
+    },
+    {
+      "op": "add",
+      "tensor": "dirPred.bias",
+      "value": [
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}
